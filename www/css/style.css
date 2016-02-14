@@ -25,18 +25,13 @@
     .tabs-stable > .tabs, .tabs.tabs-stable {
 
 
-background: #4b6cb7; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #4b6cb7 , #182848); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(180deg, #4b6cb7 , #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+background:#182848;
     }
     
     .bar.bar-stable .title{
  
         
-background: #4b6cb7; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #4b6cb7 , #4361A4); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(180deg, #4b6cb7 , #4361A4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #182848;
  color: #f4f4f4;
  margin: 0;
     }
