@@ -1,1 +1,52 @@
 /* Empty. Add your own CSS if you like */
+.batsmen{
+    color: black;
+    font-weight: 400;
+}
+
+.runs {
+    text-align: right;
+}
+
+.onCrease{
+    background-color: #D9EBFC;
+}
+
+.scorecardRow{
+    padding:2px;
+    border: 0px;
+}
+
+#BatsmenScoreCard {
+    border: 1px solid black;
+}
+
+
+    .tabs-stable > .tabs, .tabs.tabs-stable {
+
+
+background: #4b6cb7; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4b6cb7 , #182848); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(180deg, #4b6cb7 , #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    }
+    
+    .bar.bar-stable .title{
+ 
+        
+background: #4b6cb7; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4b6cb7 , #4361A4); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(180deg, #4b6cb7 , #4361A4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ color: #f4f4f4;
+ margin: 0;
+    }
+    
+    .tab-item .icon , .tab-title , .tab-item.tab-item-active, .tab-item.active, .tab-item.activated{
+        color: #e1e1e1;
+    }
+    
+  .button{
+      border-radius: 6px;
+  }
+  
+  

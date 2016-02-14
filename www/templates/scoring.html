@@ -1,0 +1,47 @@
+  <ion-view view-title="Scoring">
+        <ion-content class="padding">
+          <ion-list>
+<div class="row">
+  <div class="col">
+    <button class="button button-full button-calm" data-ng-click="addRuns(0)" data-ng-disabled="score.totalWickets>9">
+0
+</button></div>
+      <div class="col"><button class="button button-full button-calm" data-ng-click="addRuns(1)" data-ng-disabled="score.totalWickets>9">
+1
+</button></div></div>
+
+<div class="row">
+    <div class="col">
+      <button class="button button-full button-positive" data-ng-click="addRuns(2)" data-ng-disabled="score.totalWickets>9">
+2
+</button></div>
+      <div class="col"> <button class="button button-full button-positive" data-ng-click="addRuns(3)" data-ng-disabled="score.totalWickets>9">
+3
+</button></div>
+     <div class="col">  <button class="button button-full button-positive" data-ng-click="addRuns(4)" data-ng-disabled="score.totalWickets>9">
+5
+</button></div></div>
+     <div class="row"><div class="col" ><button class="button button-full button-royal" data-ng-click="addRuns(5)" data-ng-disabled="score.totalWickets>9">
+4
+</button></div>
+    <div class="col" >  <button class="button button-full button-royal" data-ng-click="addRuns(6)" data-ng-disabled="score.totalWickets>9">
+6
+</button></div></div>
+
+      <button class="button button-full button-assertive"  data-ng-click="addWickets()" data-ng-disabled="score.totalWickets>9">
+W
+</button>
+
+      </ion-list>
+<div class="card">
+  <div class="item item-text-wrap">
+    Score:  {{score.totalRuns}}/{{score.totalWickets}}
+    
+    <br/>
+    Overs: {{overs}}.{{ballsThisOver}}
+
+  </div>
+</div>  
+        </ion-content>
+      </ion-view>
+      

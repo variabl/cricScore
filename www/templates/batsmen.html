@@ -1,0 +1,19 @@
+  <ion-view view-title="Batsmen" >
+        <ion-content class="padding" >
+          <ion-list ng-repeat="batsman in score.batsmen" >
+  <ion-item class="scorecardRow" ng-class="{onCrease : batsman.status=='striker' || batsman.status=='non-striker'}">
+  
+        <div class="row" >
+            <div class="col batsmen">{{batsman.name}} <span ng-show="batsman.status=='striker'">*</span></div>
+             <div class="col status"><span data-ng-show="batsman.status == 'out'">{{batsman.status}}
+                     </span></div>
+            <div class="col runs">{{batsman.runs}}
+            ( {{batsman.balls}} ) </div>
+                
+        </div>
+      </ion-item>
+      </ion-list>
+        </ion-content>
+      </ion-view>
+      
+     

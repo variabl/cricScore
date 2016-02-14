@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+var scoringPage = angular.module('cricScore', ['ionic', 'cricScore.controllers', 'cricScore.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -21,4 +21,45 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+})
+
+.config(function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/tab/scoring');
+  $stateProvider.state('tab', {
+      url: '/tab',
+       abstract: true,
+       templateUrl : "templates/tab.html"
+  })
+
+ .state('tab.scoring', {
+  url: '/scoring',
+ 
+  views: {
+    'tab-scoring': {
+      templateUrl: 'templates/scoring.html',
+      controller: 'ScoreCtrl'
+    }
+  }
+})
+
+.state('tab.batsmen', {
+  url: '/batsmen',
+  views: {
+    'tab-batsmen': {
+      templateUrl: 'templates/batsmen.html',
+         controller: 'BatsmenCtrl'
+   
+    }
+  }
+})
+
+
+.state('tab.bowlers', {
+  url: '/bowlers',
+  views: {
+    'tab-bowlers': {
+      templateUrl: 'templates/bowlers.html'
+    }
+  }
+});
 })
